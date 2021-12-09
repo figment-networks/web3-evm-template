@@ -23,9 +23,17 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
     '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
+    '@/layouts': '<rootDir>/layouts',
+    '@/utils/(.*)': '<rootDir>/utils/$1',
+    '@/hooks/(.*)': '<rootDir>/hooks/$1',
     '@/typechain': '<rootDir>/typechain',
-    '@/pages/(.*)': '<rootDir>/pages/$1',
     '@/components': '<rootDir>/components',
     '@/components/(.*)': '<rootDir>/components/$1',
+    '@/routes': '<rootDir>/routes.ts',
+    '@/fetchers': '<rootDir>/fetchers',
+    '@/context/(.*)': '<rootDir>/context/$1',
+    '@/constants': '<rootDir>/constants.ts',
+    '@/types': '<rootDir>/types/index.ts',
+    '@/pages/(.*)': '<rootDir>/pages/$1',
   },
 };
